@@ -21,6 +21,7 @@ cfg.key = {
 
 --The groups to show to the players in the following format:
 --[DISPLAY NAME] = {vRP GROUPS LIST}
+--The display name supports emojis, just copy and paste it directly inside the string like the Lawyer example.
 cfg.groups = {
     ["Police"] = {
         "police-recruit",
@@ -49,6 +50,6 @@ cfg.groups = {
         "vip-bronze",
     },
     ["Mechanic"] = {"mechanic"},
-    ["Lawyer"] = {"lawyer"},
+    ["Lawyer💼"] = {"lawyer"},
 	["Admin"] = {"admin"},
 }
