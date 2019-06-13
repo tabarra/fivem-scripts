@@ -27,6 +27,8 @@ foreach ($users as $user) {
 		echo "Json error in user_id {$user->user_id}\n<hr>";
 		continue;
 	}
+	$user->firstname = trim($user->firstname);
+	$user->name = trim($user->name);
 	echoRow('ID', $user->user_id);
 	echoRow('DADOS', "{$user->firstname} {$user->name}");
 	echoRow('ITENS', "<a href=\"itens.php?id={$user->user_id}\" target=\"_blank\">inventory</a>");
